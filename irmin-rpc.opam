@@ -15,7 +15,7 @@ depends: [
   "capnp-rpc-net"
   "cohttp"
   "fmt"
-  "irmin" {>= "dev"}
+  "irmin"
   "lwt"
   "result" {>= "1.5"}
   "logs" {>= "0.7.0"}
@@ -29,13 +29,3 @@ build: [
   ["dune" "runtest" "-p" name] {with-test}
 ]
 dev-repo: "git+ssh://github.com/mirage/irmin-rpc"
-pin-depends: [
-  [
-    "ppx_irmin.dev"
-    "git+https://github.com/mirage/irmin#806315563437cb8d77e32f75daee1408f32b2bda"
-  ]
-  [
-    "irmin.dev"
-    "git+https://github.com/mirage/irmin#806315563437cb8d77e32f75daee1408f32b2bda"
-  ]
-]
